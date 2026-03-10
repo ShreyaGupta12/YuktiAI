@@ -20,7 +20,7 @@ if uploaded_file:
     if st.button("Run AI Compliance Audit"):
 
         try:
-            lambda_client = boto3.client("lambda")
+            lambda_client = boto3.client("lambda", region_name="us-east-1")
 
             response = lambda_client.invoke(
                 FunctionName="yuktiai-audit-processor",
@@ -60,7 +60,7 @@ if uploaded_file:
 st.header("📊 Audit History")
 
 try:
-    dynamodb = boto3.resource("dynamodb")
+    dynamodb = boto3.resource("dynamodb", region_name="us-east-1")
     table = dynamodb.Table("yuktiai-audit-logs")
 
     response = table.scan()
