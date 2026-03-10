@@ -1,0 +1,7 @@
+FDA Part 211.113: Procedures must prevent microbiological contamination of drug products.
+
+FDA Part 211.100: Written production procedures must be followed and documented.
+
+CDSCO Schedule M Section 5.3: Sterilization processes shall be validated and documented.
+
+CDSCO Schedule M Section 3.2: Manufacturing operations must be recorded.
