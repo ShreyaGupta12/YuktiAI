@@ -1,0 +1,11 @@
+21 CFR 211.160 – Temperature control must be maintained and documented during drug manufacturing to ensure product stability.
+
+21 CFR 211.113 – Sterilization procedures must be validated and properly recorded to prevent microbial contamination.
+
+WHO GMP Chapter 2 – All manufacturing personnel must be trained, identified, and their activities documented to ensure traceability.
+
+ICH Q7 Section 8 – Any deviation from standard manufacturing procedures must be investigated and documented.
+
+EU GMP Annex 1 – Sterile pharmaceutical products require validated sterilization processes to maintain sterility assurance.
+
+FDA Guidance – Environmental and temperature monitoring must be implemented during production and storage.
