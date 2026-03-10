@@ -109,7 +109,8 @@ if uploaded_file:
 
         with st.spinner("Running AI Compliance Analysis..."):
 
-            try:
+        try:
+            lambda_client = boto3.client("lambda")
 
                 response = lambda_client.invoke(
                     FunctionName="yuktiai-audit-processor",
@@ -193,7 +194,7 @@ st.divider()
 st.header("📊 Audit History")
 
 try:
-
+    dynamodb = boto3.resource("dynamodb")
     table = dynamodb.Table("yuktiai-audit-logs")
 
     response = table.scan()
@@ -218,4 +219,4 @@ try:
         st.info("No audit records yet.")
 
 except Exception as e:
-    st.error(f"❌ Error reading DynamoDB: {e}")
+    st.error(f"Error reading DynamoDB: {e}")
